@@ -1,0 +1,23 @@
+{
+  "name": "portfolioapp",
+  "version": "1.0.0",
+  "description": "TailwindCSS upload into \r ExpressJS app\r https://surfcoderepeat.com/express-tailwind",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css",
+    "devStart": "nodemon server.js "
+  },
+  "author": "RandolphSchreiner",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "mongoose": "^5.12.13",
+    "nodemon": "^2.0.7",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.4"
+  }
+}
