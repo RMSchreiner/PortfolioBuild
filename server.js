@@ -10,6 +10,7 @@ const app = express()
 const expressLayouts = require('express-ejs-layouts')
 
 const indexRouter = require("./routes/index")
+const reportbugRouter = require("./routes/reportbug")
 
 app.set("view engine", "ejs"); //sets view engine
 app.set("views", __dirname + "/views"); //where the ejs views are found
@@ -25,7 +26,7 @@ db.on('error', error => console.error)
 db.once('open', () => console.log('Connected to Mongoose'))
 
 app.use("/", indexRouter)
- 
+app.get("/reportbug", reportbugRouter)
 
 
 
