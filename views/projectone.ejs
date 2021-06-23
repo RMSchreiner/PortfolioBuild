@@ -1,0 +1,28 @@
+<style type="text/css">
+    .swiper {
+      scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+    .swiper > img {
+      scroll-snap-align: start;
+    }
+  </style>
+  <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center">
+      <div class="swiper flex overflow-x-hidden w-1/2">
+        <img class="w-full h-1/2 object-fill bg-gray-300" src="/img/dinoform.jpg" id="slide1">
+        <img class="w-full h-1/2 object-fill bg-gray-300" src="/img/dinocomplete.jpg" id="slide2">
+      </div>
+    </div>
+    <div class="flex mt-4">
+      <a href="#slide1" class="w-4 h-4 mx-1 bg-gray-400 rounded-full"></a>
+      <a href="#slide2" class="w-4 h-4 mx-1 bg-gray-400 rounded-full"></a>
+    </div>
+    <div class="flex flex-col items-center w-1/2">
+    <p >
+    This Dinosaur Compare project runs in the browser window. You can enter specifics about yourself such as your name, height, and diet preferences. It will return an object array comparing your input to different dinosaurs at random. 
+    </p>
+    <a href = "https://github.com/RMSchreiner/DinosaurCompare" class = "text-blue-600">DinoCompare GitHub</a>
+    </div>
+  </div>
